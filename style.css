@@ -7,7 +7,7 @@
 .container{
     display: grid;
     grid-template:
-    "header header" 3rem
+    "header header" 3.5rem
     "leftrow main" auto /
     220px auto;
     height: 100vh;
@@ -21,7 +21,7 @@
     grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: -1rem;
+    margin-top: -.6rem;
     height: 4rem;
 }
 
@@ -31,24 +31,41 @@
 
 .youtube img {
     height: 75px;
-    margin-left: -15rem;
+    margin-left: -9rem;
 
 }
 
 .search{
     display: grid;
     margin: 0 2rem 0 4rem;
+    grid-auto-flow: column;
+    gap: 0.3rem;
+    justify-content: center;
+    margin-left: 15rem;
 }
+
 
 input{
     width: 32.5rem;
     margin: -.3rem;
     padding: .7em;
-    border: solid 1px #777;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-color: rgb(240, 240, 240);
+    border-width: 1px;
     margin-left: -15.5rem;
     justify-self: center;
+    height: 2.5rem;
+}
+
+.search-button{
+    height: 2.5rem;
+    width: 4rem;
+    border-radius: 3px;
+    padding: 0.2rem;
+    background-color: rgb(243, 243, 243);
+    margin-top: -.3rem;
+    border-color: rgb(240, 240, 240);
+    border-width: 1px;
+    
 }
 
 
