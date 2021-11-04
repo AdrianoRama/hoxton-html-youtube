@@ -96,8 +96,12 @@ input{
 
 .leftrow{
     grid-area: leftrow;
-    overflow-y: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
+}
+
+.leftrow:hover{
+    overflow-y: scroll;
 }
 
 .main{
@@ -279,8 +283,10 @@ color: #2170d9;
 
 .best h4{
     margin-top: 1rem;
+    margin-bottom: .5rem;
     margin-left: 1.5rem;
-    font-size: .9rem;
+    font-size: .8rem;
+    font-weight: 500;
     word-spacing: .01rem;
     color: rgb(122, 122, 122);
 }
@@ -414,7 +420,7 @@ color: #2170d9;
 }
                     
 .settings:hover{
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(243, 243, 243);
 }
 .feedback {
     display: grid;
@@ -446,7 +452,7 @@ color: #2170d9;
 }
                         
 .feedback:hover{
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(243, 243, 243);
 }
 
 .about{
