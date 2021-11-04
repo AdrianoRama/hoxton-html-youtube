@@ -1,8 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display&family=Roboto:wght@100;400;500&display=swap');
+
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 .container{
     display: grid;
@@ -31,7 +36,7 @@
 
 .youtube img {
     height: 75px;
-    margin-left: -9rem;
+    margin-left: -5rem;
 
 }
 
@@ -50,7 +55,7 @@ input{
     margin: -.3rem;
     padding: .7em;
     border: 1px solid #777;
-    margin-left: -15.5rem;
+    margin-left: -8rem;
     justify-self: center;
     height: 2.5rem;
     font-size: inherit;
@@ -69,7 +74,16 @@ input{
     border: 1px solid #777;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    cursor: pointer;
     
+}
+
+.mic{
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -77,8 +91,7 @@ input{
     display: grid;
     grid-template-columns: repeat(4, auto);
     align-items: center;
-    gap: 1.5rem;
-    margin-right: 2rem;
+    gap:.5rem;
 }
 
 .leftrow{
@@ -129,3 +142,438 @@ input{
 .category:last-child {
     margin-right: 0;
 }
+
+
+.home-btn {
+    display: grid;
+    justify-content: start;
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgb(223, 223, 223)
+}
+
+.home-btn img{
+    position: relative;
+    top: .3rem;
+    margin-left: 1.3rem;
+    margin-right: 1.6rem;
+    }
+    
+    .home-btn h4{
+        display: inline;
+        font-weight: 600;
+        font-size: .8rem;
+        text-align: center;
+        padding-right: 3.4rem;
+    }
+    
+    .home-btn a{
+        text-decoration: none;
+        color: #535353;
+    }
+
+    .home-btn:hover{
+        background-color: rgb(212, 212, 212);
+    }
+
+    .home-btn-2 {
+        display: grid;
+        justify-content: start;
+        width: 100%;
+        height: 2.5rem;
+    }
+    
+    .home-btn-2 img{
+        position: relative;
+        top: .3rem;
+        margin-left: 1.3rem;
+        margin-right: 1.6rem;
+        }
+        
+        .home-btn-2 h4{
+            display: inline;
+            font-weight: 500;
+            font-size: .8rem;
+            text-align: center;
+        }
+        
+        .home-btn-2 a{
+            text-decoration: none;
+            color: #535353;
+        }
+    
+        .home-btn-2:hover{
+            background-color: rgb(243, 243, 243);
+        }
+    
+.home-btn-3{
+    display: grid;
+    justify-content: start;
+    border-bottom: solid 1px rgb(224, 224, 224);
+    height: 2.5rem;
+}
+
+.home-btn-3 img{
+    position: relative;
+    top: .3rem;
+    margin-left: 1.3rem;
+    margin-right: 1.6rem;
+    }
+    
+    .home-btn-3 h4{
+        display: inline;
+        font-weight: 500;
+        font-size: .8rem;
+        text-align: center;
+    }
+    
+    .home-btn-3 a{
+        text-decoration: none;
+        color: #535353;
+    }
+
+    .home-btn-3:hover{
+        background-color: rgb(243, 243, 243);
+    }
+
+    .home-btn-4 {
+        display: grid;
+        justify-content: start;
+        width: 100%;
+        height: 2.5rem;
+        margin-top: .5rem;
+    }
+    
+    .home-btn-4 img{
+        position: relative;
+        top: .3rem;
+        margin-left: 1.3rem;
+        margin-right: 1.6rem;
+        }
+        
+        .home-btn-4 h4{
+            display: inline;
+            font-weight: 500;
+            font-size: .8rem;
+            text-align: center;
+        }
+        
+        .home-btn-4 a{
+            text-decoration: none;
+            color: #535353;
+        }
+    
+        .home-btn-4:hover{
+            background-color: rgb(243, 243, 243);
+        }
+
+        .sign-in{
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+            margin-top: .7rem;
+            border-color: #5f98e3;
+            border-width: thin;
+            background-color: white;
+            color: #5f98e3;
+            display: grid;
+            grid-auto-flow: column;
+            height: 2rem;
+            cursor: pointer;
+
+        }
+
+        .sign-in img{
+            margin-top: .2rem;
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+
+        .sign-in h3{
+        padding-top: .5rem;
+        padding-right: 1rem;
+        font-weight: 500;
+        font-size: .8rem;
+        color: #2170d9;
+        }
+
+        .sign-in-2{
+            border-bottom: solid thin rgb(224, 224, 224);
+        }
+
+        .sign-in-2 p{
+            margin-left: 2rem;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+            font-size: .9rem;
+        }
+
+        .best h4{
+            margin-top: 1rem;
+            margin-left: 1.5rem;
+            font-size: .9rem;
+            word-spacing: .01rem;
+            color: rgb(122, 122, 122);
+        }
+
+        .best-btn {
+            display: grid;
+            justify-content: start;
+            width: 100%;
+            height: 2.5rem;
+        }
+        
+        .best-btn img{
+            position: relative;
+            top: .3rem;
+            margin-left: 1.5rem;
+            margin-right: 1.6rem;
+            border-radius: 1rem;
+            }
+            
+            .best-btn h4{
+                display: inline;
+                font-weight: 500;
+                font-size: .8rem;
+                text-align: center;
+                color: #535353;
+                margin-left: -.1rem;
+            }
+            
+            .best-btn a{
+                text-decoration: none;
+                color: #535353;
+            }
+        
+            .best-btn:hover{
+                background-color: rgb(243, 243, 243);
+            }
+
+            .best-btn-2 {
+                display: grid;
+                justify-content: start;
+                width: 100%;
+                height: 2.5rem;
+            }
+            
+            .best-btn-2 img{
+                position: relative;
+                top: .3rem;
+                margin-left: 1.5rem;
+                margin-right: 1.6rem;
+                border-radius: 1rem;
+                }
+                
+                .best-btn-2 h4{
+                    display: inline;
+                    font-weight: 500;
+                    font-size: .8rem;
+                    text-align: center;
+                    color: #535353;
+                    margin-left: -.1rem;
+                }
+                
+                .best-btn-2 a{
+                    text-decoration: none;
+                    color: #535353;
+                }
+            
+                .best-btn-2:hover{
+                    background-color: rgb(243, 243, 243);
+                }
+
+                .best-btn-3 {
+                    display: grid;
+                    justify-content: start;
+                    width: 100%;
+                    height: 2.5rem;
+                }
+                
+                .best-btn-3 img{
+                    position: relative;
+                    top: .3rem;
+                    margin-left: 1.5rem;
+                    margin-right: 1.6rem;
+                    border-radius: 1rem;
+                    }
+                    
+                    .best-btn-3 h4{
+                        display: inline;
+                        font-weight: 500;
+                        font-size: .8rem;
+                        text-align: center;
+                        color: #535353;
+                        margin-left: -.1rem;
+                    }
+                    
+                    .best-btn-3 a{
+                        text-decoration: none;
+                        color: #535353;
+                    }
+                
+                    .best-btn-3:hover{
+                        background-color: rgb(243, 243, 243);
+                    }
+
+                    .best-btn-4 {
+                        display: grid;
+                        justify-content: start;
+                        width: 100%;
+                        height: 2.5rem;
+                    }
+                    
+                    .best-btn-4 img{
+                        position: relative;
+                        top: .3rem;
+                        margin-left: 1.5rem;
+                        margin-right: 1.6rem;
+                        border-radius: 1rem;
+                        }
+                        
+                        .best-btn-4 h4{
+                            display: inline;
+                            font-weight: 500;
+                            font-size: .8rem;
+                            text-align: center;
+                            color: #535353;
+                            margin-left: -.1rem;
+                        }
+                        
+                        .best-btn-4 a{
+                            text-decoration: none;
+                            color: #535353;
+                        }
+                    
+                        .best-btn-4:hover{
+                            background-color: rgb(243, 243, 243);
+                        }
+                        .best-btn-5 {
+                            display: grid;
+                            justify-content: start;
+                            width: 100%;
+                            height: 2.5rem;
+                        }
+                        
+                        .best-btn-5 img{
+                            position: relative;
+                            top: .3rem;
+                            margin-left: 1.5rem;
+                            margin-right: 1.6rem;
+                            border-radius: 1rem;
+                            }
+                            
+                            .best-btn-5 h4{
+                                display: inline;
+                                font-weight: 500;
+                                font-size: .8rem;
+                                text-align: center;
+                                color: #535353;
+                                margin-left: -.1rem;
+                            }
+                            
+                            .best-btn-5 a{
+                                text-decoration: none;
+                                color: #535353;
+                            }
+                        
+                            .best-btn-5:hover{
+                                background-color: rgb(243, 243, 243);
+                            }   
+                            .best-btn-6 {
+                                display: grid;
+                                justify-content: start;
+                                width: 100%;
+                                height: 2.5rem;
+                            }
+                            
+                            .best-btn-6 img{
+                                position: relative;
+                                top: .3rem;
+                                margin-left: 1.5rem;
+                                margin-right: 1.6rem;
+                                border-radius: 1rem;
+                                }
+                                
+                                .best-btn-6 h4{
+                                    display: inline;
+                                    font-weight: 500;
+                                    font-size: .8rem;
+                                    text-align: center;
+                                    color: #535353;
+                                    margin-left: -.1rem;
+                                }
+                                
+                                .best-btn-6 a{
+                                    text-decoration: none;
+                                    color: #535353;
+                                }
+                            
+                                .best-btn-6:hover{
+                                    background-color: rgb(243, 243, 243);
+                                }
+                                
+                                .best-btn-7 {
+                                    display: grid;
+                                    justify-content: start;
+                                    width: 100%;
+                                    height: 2.5rem;
+                                }
+                                
+                                .best-btn-7 img{
+                                    position: relative;
+                                    top: .3rem;
+                                    margin-left: 1.5rem;
+                                    margin-right: 1.6rem;
+                                    border-radius: 1rem;
+                                    }
+                                    
+                                    .best-btn-7 h4{
+                                        display: inline;
+                                        font-weight: 500;
+                                        font-size: .8rem;
+                                        text-align: center;
+                                        color: #535353;
+                                        margin-left: -.1rem;
+                                    }
+                                    
+                                    .best-btn-7 a{
+                                        text-decoration: none;
+                                        color: #535353;
+                                    }
+                                
+                                    .best-btn-7:hover{
+                                        background-color: rgb(243, 243, 243);
+                                    } 
+                                    
+                                    .best-btn-8 {
+                                        display: grid;
+                                        justify-content: start;
+                                        width: 100%;
+                                        height: 2.5rem;
+                                    }
+                                    
+                                    .best-btn-8 img{
+                                        position: relative;
+                                        top: .3rem;
+                                        margin-left: 1.5rem;
+                                        margin-right: 1.6rem;
+                                        border-radius: 1rem;
+                                        }
+                                        
+                                        .best-btn-8 h4{
+                                            display: inline;
+                                            font-weight: 500;
+                                            font-size: .8rem;
+                                            text-align: center;
+                                            color: #535353;
+                                            margin-left: -.1rem;
+                                        }
+                                        
+                                        .best-btn-8 a{
+                                            text-decoration: none;
+                                            color: #535353;
+                                        }
+                                    
+                                        .best-btn-8:hover{
+                                            background-color: rgb(243, 243, 243);
+                                        }                        
+                        
