@@ -17,8 +17,9 @@
     220px auto;
     height: 100vh;
     width: 100vw;
-    overflow-y: scroll;
 } 
+
+
 
 #header{
     grid-area: header;
@@ -98,15 +99,49 @@ input{
     grid-area: leftrow;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    position: sticky;
+    top: 0;
+    z-index: 10rem;
 }
 
 .leftrow:hover{
     overflow-y: scroll;
 }
 
+.leftrow::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  .leftrow::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  .leftrow::-webkit-scrollbar-thumb {
+    background: rgb(143, 143, 143);
+    border-radius: 10rem;
+  }
+
 .main{
     grid-area: main;
+    overflow-y: scroll;
 }
+
+.main:hover{
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  .main::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  .main::-webkit-scrollbar-thumb {
+    background: rgb(143, 143, 143);
+    border-radius: 10rem;
+  }
 
 .categories{
     padding: .4rem 2rem;
@@ -114,7 +149,6 @@ input{
     border-bottom: solid 1px rgb(224, 224, 224);
     overflow: auto;
     height: 2.5rem;
-    
 }
 
 .category-section{
@@ -138,6 +172,7 @@ input{
 .category:hover {
     background-color: #ddd;
 }
+
 
 .category.active {
     background-color: #141414;
@@ -493,3 +528,76 @@ margin-top: 1rem;
 margin-bottom: 1rem;
 color: rgb(165, 165, 165);
   }
+
+
+.videos{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.video-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem 1rem;
+    padding: 1.5rem 0;
+    margin: 0 1.5rem;
+    border-top: solid 4px #CCC;
+}
+
+.thumbnail{
+    position: relative;
+    display: grid;
+}
+
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 150px;
+    background-color: #aaa;
+}
+
+.video-bottom{
+display: grid;
+grid-auto-flow: column;
+justify-content: start;
+margin-top: .8rem;
+}
+
+.channel-icon{
+    margin-right: .75rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #aaa;
+}
+
+.video-details{
+    display: grid;
+}
+
+.video-title{
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.video-channel-name{
+    margin-bottom: .1rem;
+    text-decoration: none;
+    color: #555;
+    transition: color 100ms;
+    font-size: .8rem;
+}
+
+.video-channel-name:hover{
+    color: #111;
+}
+
+.video-metadata{
+    color: #555;
+    font-size: .7rem;
+}
+
